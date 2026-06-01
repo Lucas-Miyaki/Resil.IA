@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard de Desgaste</title>
+<link rel="stylesheet" href="./desgaste.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+  <div class="logo">
+    Tool<span>Vision</span>
+  </div>
+
+  <ul class="menu">
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="#">Ferramentas</a></li>
+    <li><a href="#">Análise IA</a></li>
+    <li><a href="#">Relatórios</a></li>
+    <li><a href="#">Configurações</a></li>
+  </ul>
+
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h1>Dashboard de Desgaste</h1>
+    <p>Atualizado agora</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Ferramentas Ativas</h3>
+      <p>18</p>
+    </div>
+
+    <div class="card">
+      <h3>Vida Útil Média</h3>
+      <p>72%</p>
+    </div>
+
+    <div class="card">
+      <h3>Alertas IA</h3>
+      <p>4</p>
+    </div>
+
+    <div class="card">
+      <h3>Capturas Hoje</h3>
+      <p>1.284</p>
+    </div>
+
+  </div>
+
+  <div class="chart">
+
+    <h2>Desgaste das Ferramentas</h2>
+
+    <div class="chart-bars">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+  </div>
+
+  <div class="table">
+
+    <h2>Status das Ferramentas</h2>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>Ferramenta</th>
+          <th>Máquina</th>
+          <th>Desgaste</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>TNMG-001</td>
+          <td>Torno CNC 01</td>
+          <td>28%</td>
+          <td><span class="status good">Estável</span></td>
+        </tr>
+
+        <tr>
+          <td>TNMG-002</td>
+          <td>Torno CNC 02</td>
+          <td>67%</td>
+          <td><span class="status warning">Atenção</span></td>
+        </tr>
+
+        <tr>
+          <td>TNMG-003</td>
+          <td>Torno CNC 03</td>
+          <td>91%</td>
+          <td><span class="status danger">Crítico</span></td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    color:#0f172a;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    background:#ffffff;
+    box-shadow:0 2px 12px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#2563eb;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#334155;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#2563eb;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    padding:12px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* HERO */
+
+.hero{
+    padding:100px 0 70px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    color:#475569;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+/* DASHBOARD GRID */
+
+.dashboards{
+    padding:40px 0 100px;
+}
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+    gap:35px;
+}
+
+.dashboard-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-8px);
+}
+
+.dashboard-preview{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    padding:25px;
+    height:260px;
+    position:relative;
+}
+
+.mock-window{
+    background:#111827;
+    border-radius:14px;
+    padding:18px;
+    height:100%;
+    color:white;
+}
+
+.mock-top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.mock-title{
+    font-size:0.95rem;
+    color:#cbd5e1;
+}
+
+.status{
+    background:#16a34a;
+    padding:5px 12px;
+    border-radius:30px;
+    font-size:0.75rem;
+}
+
+.chart-bars{
+    display:flex;
+    align-items:flex-end;
+    gap:12px;
+    height:100px;
+    margin-top:25px;
+}
+
+.bar{
+    flex:1;
+    background:#3b82f6;
+    border-radius:8px 8px 0 0;
+}
+
+.bar:nth-child(1){height:45%;}
+.bar:nth-child(2){height:80%;}
+.bar:nth-child(3){height:60%;}
+.bar:nth-child(4){height:95%;}
+.bar:nth-child(5){height:70%;}
+
+.metric-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:20px;
+}
+
+.metric{
+    background:#1e293b;
+    padding:12px;
+    border-radius:10px;
+}
+
+.metric h4{
+    font-size:0.75rem;
+    color:#94a3b8;
+    margin-bottom:5px;
+}
+
+.metric p{
+    font-size:1.1rem;
+    font-weight:bold;
+}
+
+.dashboard-content{
+    padding:30px;
+}
+
+.dashboard-content h2{
+    margin-bottom:15px;
+    font-size:1.5rem;
+}
+
+.dashboard-content p{
+    color:#475569;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.tag{
+    background:#dbeafe;
+    color:#1d4ed8;
+    padding:8px 12px;
+    border-radius:30px;
+    font-size:0.85rem;
+    font-weight:600;
+}
+
+/* SECTION */
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title h2{
+    font-size:2.7rem;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    color:#64748b;
+    max-width:700px;
+    margin:auto;
+}
+
+/* CTA */
+
+.cta{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.cta h2{
+    font-size:2.7rem;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto auto 30px;
+    color:#cbd5e1;
+}
+
+/* FOOTER */
+
+footer{
+    background:#020617;
+    color:#94a3b8;
+    text-align:center;
+    padding:30px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    nav{
+    flex-direction:column;
+    gap:20px;
+    }
+
+    .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    }
+
+    .hero h1{
+    font-size:2.5rem;
+    }
+
+}
